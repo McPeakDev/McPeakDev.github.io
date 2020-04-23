@@ -8,6 +8,7 @@ class Resume extends React.PureComponent
         <div className="row">
             <div className="col-md-8 mx-auto">
                 <div id="header" className="text-center">
+                    <img alt="" src="https://avatars2.githubusercontent.com/u/35775195?v=4" height="`15%" width="15%"/>
                     <h3>Matthew L. McPeak</h3>
                     <h4>128 Manchester Place | Kingsport, TN 37663</h4>
                     <h4>(423) 791-8627 | <a className="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/McPeakDev/"><u>GitHub</u></a> | <a className="text-white" href="mailto:m.mcpeakcs@gmail.com"><u>m.mcpeakcs@gmail.com</u></a></h4>

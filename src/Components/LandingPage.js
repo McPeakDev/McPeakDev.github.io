@@ -30,7 +30,7 @@ class LandingPage extends React.PureComponent
           <Nav className="mr-auto">
             <Nav.Link onClick={(e) => this.handleClick(e, "Resume")}>Resume</Nav.Link>
             <Nav.Link onClick={(e) => this.handleClick(e, "Projects")}>Projects</Nav.Link>
-            <Nav.Link onClick={(e) => this.handleClick(e, "Top News")}>Today's Top News Stories</Nav.Link>
+            <Nav.Link onClick={(e) => this.handleClick(e, "Top News")}>News</Nav.Link>
 
           </Nav>
         </Navbar>
