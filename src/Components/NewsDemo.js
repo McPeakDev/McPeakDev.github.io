@@ -29,7 +29,8 @@ class NewsDemo extends React.PureComponent
       return(
         <div className="row">
           <div className="col-md-8 mx-auto">
-            <h2>This demonstrates the use of an API and dynamic mapping. This displays the top news stories from the New York Times for the current day.</h2>
+            <h2 className="text-center">This demonstrates the use of an API and dynamic mapping.</h2>
+            <h2 className="text-center">This displays the top news stories from the New York Times for the current day using React.</h2>
             <br/>
             <Button href="https://github.com/McPeakDev/McPeakDev.github.io/blob/development/src/Components/NewsDemo.js" variant="primary">See Code</Button>
             <br/>
