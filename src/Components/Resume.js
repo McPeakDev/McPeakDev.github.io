@@ -62,7 +62,7 @@ class Resume extends React.PureComponent
                     <h5><b>College of Nursing I.T. at ETSU – Johnson City, TN</b></h5>
                     <ul>
                         <li><h5>Supported staff in the ETSU College of Nursing with PC and Mac requests.</h5></li>
-                        <li><h5>Fixed printers when printers are unable to print.</h5></li>
+                        <li><h5>Serviced printers when printers were offline.</h5></li>
                         <li><h5>Stocked printer in Mail Room.</h5></li>
                         <li><h5>Installed PCs and its peripherals where needed.</h5></li>
                     </ul>
