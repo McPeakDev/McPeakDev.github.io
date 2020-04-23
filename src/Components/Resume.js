@@ -5,7 +5,7 @@ class Resume extends React.PureComponent
   render()
   {
       return(
-        <div className="row" style={{fontFamily: 'Georgia'}}>
+        <div className="row">
             <div className="col-md-8 mx-auto">
                 <div id="header" className="text-center">
                     <h3>Matthew L. McPeak</h3>

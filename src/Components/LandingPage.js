@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Fade from 'react-bootstrap/Fade'
 import Resume from './Resume'
-import Home from './Home'
+import News from './NewsDemo'
 import Projects from './Projects'
 
 
@@ -12,7 +12,7 @@ class LandingPage extends React.PureComponent
   constructor(props)
   {
     super(props);
-    this.state = {linkState: "Home", pageShown: true};
+    this.state = {linkState: "Resume", pageShown: true};
   }
 
   handleClick(event, linkName)
@@ -26,25 +26,24 @@ class LandingPage extends React.PureComponent
     return (
       <div>
         <Navbar bg="dark" variant="dark">
-          <Navbar.Brand>
-            <Nav.Link className="text-white" onClick={(e) => this.handleClick(e, "Home")}>McPeakDev</Nav.Link>
-          </Navbar.Brand>
+          <Navbar.Brand href="https://github.com/McPeakDev" target="_blank" rel="noopener noreferrer">McPeakDev</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link onClick={(e) => this.handleClick(e, "Home")}>Home</Nav.Link>
             <Nav.Link onClick={(e) => this.handleClick(e, "Resume")}>Resume</Nav.Link>
             <Nav.Link onClick={(e) => this.handleClick(e, "Projects")}>Projects</Nav.Link>
+            <Nav.Link onClick={(e) => this.handleClick(e, "Top News")}>Today's Top News Stories</Nav.Link>
+
           </Nav>
         </Navbar>
         <Fade onExited={() => {this.setState({linkState: this.state.nextLink, pageShown: true});}} in={this.state.pageShown}>
           <div id="body">
-            {this.state.linkState === "Home" &&
-              <Home />
-            }
             {this.state.linkState === "Resume" &&
               <Resume/>
             }
             {this.state.linkState === "Projects" &&
               <Projects />
+            }
+            {this.state.linkState === "Top News" &&
+              <News />
             }
           </div>
         </Fade>
