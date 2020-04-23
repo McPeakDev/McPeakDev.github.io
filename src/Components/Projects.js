@@ -19,8 +19,6 @@ class Projects extends React.PureComponent
       }
     ).then(res => res.json());
 
-    console.log(data);
-
     this.setState({repos: data})
   }
 
@@ -42,7 +40,7 @@ class Projects extends React.PureComponent
                         <Card.Body>
                           <Card.Title>{repo["name"]}</Card.Title>
                           <Card.Text>{repo["description"]}</Card.Text>
-                          <Button href={repo["url"]} variant="dark">See Repository</Button>
+                          <Button href={repo["html_url"]} variant="dark">See Repository</Button>
                         </Card.Body>
                       </Card>
                       <br/>
