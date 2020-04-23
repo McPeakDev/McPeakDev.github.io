@@ -27,7 +27,8 @@ class Projects extends React.PureComponent
       return(
           <div className="row">
           <div className="col-md-8 mx-auto">
-            <h2>This demonstrates the use of an API and dynamic mapping. This displays all of my public repos from Github</h2>
+            <h2 className="text-center">This demonstrates the use of an API and dynamic mapping.</h2>
+            <h2 className="text-center">This displays all of my public repos from Github using React.</h2>
             <br/>
             <Button href="https://github.com/McPeakDev/McPeakDev.github.io/blob/development/src/Components/Projects.js" variant="primary">See Code</Button>
             <br/>
